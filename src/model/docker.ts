@@ -61,7 +61,7 @@ class Docker {
         --env ANDROID_KEYSTORE_PASS="${androidKeystorePass}" \
         --env ANDROID_KEYALIAS_NAME="${androidKeyaliasName}" \
         --env ANDROID_KEYALIAS_PASS="${androidKeyaliasPass}" \
-        --env CUSTOM_PARAMETERS="${customParameters}" \
+        --env CUSTOM_PARAMETERS=\\"${customParameters}\\" \
         --env GITHUB_REF \
         --env GITHUB_SHA \
         --env GITHUB_REPOSITORY \
