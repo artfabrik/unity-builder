@@ -298,6 +298,7 @@ export default class Versioning {
    * Run git in the specified project path
    */
   static async git(arguments_, options = {}) {
+    console.log(this.projectPath);
     return System.run('git', arguments_, { cwd: this.projectPath, ...options });
   }
 }
